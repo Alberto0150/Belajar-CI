@@ -170,26 +170,16 @@ develop me especially in web development, IoT, and Data Management.</p>
           <div class="col-lg-6">
 
             <div class="progress">
-              <span class="skill">HTML <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+              <span class="skill">HTML <i class="val">Intermediate</i></span>
             </div>
 
             <div class="progress">
-              <span class="skill">CSS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+              <span class="skill">CSS <i class="val">Intermediate</i></span>
             </div>
 
             <div class="progress">
-              <span class="skill">JavaScript <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+              <span class="skill">JavaScript <i class="val">Intermediate</i></span>
             </div>
-
           </div>
 
           <div class="col-lg-6">
