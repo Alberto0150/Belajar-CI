@@ -75,8 +75,8 @@ develop me especially in web development, IoT, and Data Management.</p>
         </div>
 
         <div class="row">
-          <div class="col-lg-4">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+          <div class="col-lg-4" style="padding-left:5%">
+            <img src="assets/img/profile-img.png" class="img-fluid" alt="" style="border-style:solid; border-color:#74f9ff;border-width:5px; border-radius:50%; width:80%">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <!-- <h3>Developer</h3> -->
@@ -104,17 +104,17 @@ develop me especially in web development, IoT, and Data Management.</p>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>15 September 2000</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+62 877 8138 2883</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Bekasi</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Hackerrank Profile:</strong> <a href="https://www.hackerrank.com/Throwing_ice">Click here!</a></li>
+                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+62 877 8138 2883</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Bekasi</span></li> -->
                 </ul>
               </div>
               <div class="col-lg-6">
-                <ul>
+                <!-- <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>20</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Email 1:</strong> <span>albertosanjaya15@gmail.com</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Email 2:</strong> <span>albertosanjaya2@gmail.com</span></li>
-                </ul>
+                </ul> -->
               </div>
             </div>
             <!-- <p>
