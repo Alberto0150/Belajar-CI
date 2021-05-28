@@ -1204,3 +1204,18 @@ hr{
   height: 5px !important;
   margin-bottom: 40px;
 }
+
+li{
+  flex-grow: 1;
+}
+
+@media (min-width: 992px) {
+  .col-lg-6-custom {
+      flex: 0 0 auto;
+      width: 25%;
+      flex-grow: 1;
+      border-style: dashed;
+      margin: 0 3%;
+      border-radius: 5px;
+  }
+}
