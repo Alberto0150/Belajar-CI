@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background: #0678e3;
+  background: #74f9ff;
   color: #fff;
 }
 
@@ -1139,11 +1139,15 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #f7f8f9;
+  
+  border-top-style: dotted;
+  border-color: #74f9ff;
+  background: #32373e;
   color: #ffffff;
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
+  padding-left: 100px;
 }
 
 #footer h3 {
