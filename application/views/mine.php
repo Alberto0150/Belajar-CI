@@ -47,13 +47,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Alberto Sanjaya</h1>
-      <p>I'm <span class="typed" data-typed-items="Web Developer, Drone Pilot, Student"></span></p>
+      <p>I'm <span class="typed" data-typed-items="Web Developer, Drone Pilot, IT Student"></span></p>
       <div class="social-links">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/albertosanjaya15/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/Alberto0150" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+        <a href="https://www.hackerrank.com/Throwing_ice" target="_blank" class="book-content"><i class="bx bx-book-content"></i></a>
+        <a href="mailto:albertosanjaya15@gmail.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
+        <a href="https://wa.me/6287781382883" target="_blank" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+
+        
       </div>
     </div>
   </section><!-- End Hero -->
@@ -82,6 +84,23 @@ develop me especially in web development, IoT, and Data Management.</p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
               magna aliqua.
             </p> -->
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>15 September 2000</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+62 877 8138 2883</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Bekasi</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>20</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email 1:</strong> <span>albertosanjaya15@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email 2:</strong> <span>albertosanjaya2@gmail.com</span></li>
+                </ul>
+              </div>
+            </div>
+            <hr>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
