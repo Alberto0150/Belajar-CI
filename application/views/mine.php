@@ -34,9 +34,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <ul>
         <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
         <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Competition</span></a></li>
         <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Event Committee</span></a></li>
         <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
       </ul>
     </nav><!-- .nav-menu -->
@@ -156,7 +156,7 @@ develop me especially in web development, IoT, and Data Management.</p>
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0" style="flex-grow: 1;">
             <div class="count-box">
               <i class="bi bi-award"></i>
-              <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
               <p>Awards</p>
             </div>
           </div>
@@ -209,12 +209,8 @@ develop me especially in web development, IoT, and Data Management.</p>
             <div class="progress">
               <span class="skill">Arduino - Intermediate</span>
             </div>
-
-
           </div>
-
         </div>
-
       </div>
     </section><!-- End Skills Section -->
 
@@ -223,38 +219,24 @@ develop me especially in web development, IoT, and Data Management.</p>
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Resume</h2>
-          <h3> Coming Soon</h3>
+          <h2>Competition</h2>
         </div>
 
-        <!-- <div class="row">
+        <div class="row">
           <div class="col-lg-6">
-            <h3 class="resume-title">Sumary</h3>
-            <div class="resume-item pb-0">
-              <h4>Brandon Johnson</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
-              <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
-              </ul>
+            <h3 class="resume-title">Technology Euphoria 2020</h3>
+            <div class="resume-item">
+              <h4>Web Development Semifinalist</h4>
+              <p><em>The competition come with challenge of creating a website that support Sustainable Development Goals (SDG). With over 100+ teams who participate from all around Indonesia, we achieve the top 20 teams.</em></p>
             </div>
 
-            <h3 class="resume-title">Education</h3>
+            <h3 class="resume-title">Technogine 2020</h3>
             <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-            </div>
-            <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
+              <h4>1st Position of Remotely Operated Underwater Vehicle &#40;ROV&#41;</h4>
+              <p><em>Theme that we must use is “Technology Human Environment”. Which in this case, our team came up with an idea of created an ROV that plays a role in dealing with illegal naval mine. This competition was attended by 10 teams from difference university in Indonesia.</em></p>
             </div>
           </div>
-          <div class="col-lg-6">
+          <!-- <div class="col-lg-6">
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
               <h4>Senior graphic design specialist</h4>
@@ -278,22 +260,22 @@ develop me especially in web development, IoT, and Data Management.</p>
                 <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
               </ul>
             </div>
-          </div>
-        </div> -->
+          </div> -->
+        </div>
 
       </div>
     </section><!-- End Resume Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <!-- <section id="portfolio" class="portfolio section-bg">
+    <section id="portfolio" class="portfolio section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
           <h2>Portfolio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h3>Coming Soon<h3>
         </div>
 
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
@@ -319,10 +301,10 @@ develop me especially in web development, IoT, and Data Management.</p>
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
       </div>
-    </section> -->
+    </section>
 	<!-- End Portfolio Section -->
 
     <!-- ======= Services Section ======= -->
@@ -330,7 +312,7 @@ develop me especially in web development, IoT, and Data Management.</p>
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Services</h2>
+          <h2>Event Committee</h2>
           <h3> Coming Soon </h3>
         </div>
 
@@ -425,29 +407,28 @@ develop me especially in web development, IoT, and Data Management.</p>
 
         <div class="section-title">
           <h2>Contact</h2>
-          <h3> Coming Soon </h3>
         </div>
 
-        <!-- <div class="row mt-1">
+        <div class="row mt-1">
 
           <div class="col-lg-4">
             <div class="info">
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>Bekasi - Surabaya</p>
               </div>
 
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>info@example.com</p>
+                <p>albertosanjaya2@gmail.com</p>
               </div>
 
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <p>+62 877 8138 2883</p>
               </div>
 
             </div>
@@ -481,7 +462,7 @@ develop me especially in web development, IoT, and Data Management.</p>
 
           </div>
 
-        </div> -->
+        </div>
 
       </div>
     </section>
