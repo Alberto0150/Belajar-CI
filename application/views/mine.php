@@ -452,6 +452,7 @@ develop me especially in web development, IoT, and Data Management.</p>
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
+              <p class="antispam">Leave this empty: <input type="text" name="url" /></p>
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
