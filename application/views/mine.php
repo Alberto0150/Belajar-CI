@@ -76,7 +76,7 @@ develop me especially in web development, IoT, and Data Management.</p>
 
         <div class="row">
           <div class="col-lg-4" style="padding-left:5%">
-            <img src="assets/img/profile-img.png" class="img-fluid" alt="" style="border-style:solid; border-color:#74f9ff;border-width:5px; border-radius:50%; width:80%">
+            <img src="assets/img/profile-img.png" class="img-fluid" alt="" style="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <!-- <h3>Developer</h3> -->
