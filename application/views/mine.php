@@ -21,6 +21,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<!-- Template Main CSS File -->
 	<link href="assets/css/style.css" rel="stylesheet">
+  <title> Alberto Portofolio </title>
 </head>
 <body>
 
