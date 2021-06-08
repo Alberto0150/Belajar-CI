@@ -1,2 +1,3 @@
-<h1>About Us</h1>
-<p>Ini adalah halaman Tentang Saya</p>
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>

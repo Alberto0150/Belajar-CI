@@ -20,13 +20,17 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
+		$this->load->view('template/head');
 		$this->load->view('Mine');
+		$this->load->view('template/foot');
 	}
 
 	public function about()
 	{
 		// fungsi untuk me-load view about.php
+		$this->load->view('template/head');
 		$this->load->view('about');
+		$this->load->view('template/foot');
 	}
 
 public function contact()
