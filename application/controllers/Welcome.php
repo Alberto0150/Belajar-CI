@@ -18,6 +18,13 @@ class Welcome extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+	public function __construct()
+    {
+        parent::__construct();
+        $this->load->model("Achievement_model");
+        $this->load->library('form_validation');
+    }
+
 	public function index()
 	{
 		$this->load->view('template/head');
@@ -33,9 +40,17 @@ class Welcome extends CI_Controller {
 		$this->load->view('template/foot');
 	}
 
-public function contact()
+	public function contact()
 	{
 		// fungsi untuk me-load view contact.php
 		$this->load->view('contact');
 	}
+
+    public function achievement_list()
+    {
+        // fungsi untuk me-load data.php
+        $data["listAchievement"] = $this->Achievement_model->getAll();
+		// memilih di file apa dia digunakan
+        $this->load->view("mine", $data);
+    }
 }
