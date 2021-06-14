@@ -21,14 +21,18 @@ class Welcome extends CI_Controller {
 	public function __construct()
     {
         parent::__construct();
-        $this->load->model("Achievement_model");
+        $this->load->model("achievement_model");
         $this->load->library('form_validation');
     }
 
 	public function index()
 	{
 		$this->load->view('template/head');
-		$this->load->view('Mine');
+
+		// fungsi untuk me-load data.php
+        $data["listAchievement"] = $this->achievement_model->getAll();
+		// memilih di file apa dia digunakan
+        $this->load->view("Mine", $data);
 		$this->load->view('template/foot');
 	}
 
@@ -46,11 +50,4 @@ class Welcome extends CI_Controller {
 		$this->load->view('contact');
 	}
 
-    public function achievement_list()
-    {
-        // fungsi untuk me-load data.php
-        $data["listAchievement"] = $this->Achievement_model->getAll();
-		// memilih di file apa dia digunakan
-        $this->load->view("mine", $data);
-    }
 }

@@ -792,16 +792,17 @@ section {
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
-  padding: 70px 20px 80px 20px;
+  padding: 40px 20px 50px 20px;
   transition: all ease-in-out 0.3s;
-  background: #fff;
+  background: #4b4b4b;
   box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
+  border-radius: 10px;
 }
 
 .services .icon-box .icon {
   margin: 0 auto;
-  width: 100px;
-  height: 100px;
+  /* width: 100px;
+  height: 100px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -809,16 +810,11 @@ section {
   position: relative;
 }
 
-.services .icon-box .icon i {
+.services .icon-box .icon img {
   font-size: 36px;
   transition: 0.5s;
   position: relative;
-}
-
-.services .icon-box .icon svg {
-  position: absolute;
-  top: 0;
-  left: 0;
+  border-radius: 10px;
 }
 
 .services .icon-box .icon svg path {
@@ -832,8 +828,8 @@ section {
   font-size: 22px;
 }
 
-.services .icon-box h4 a {
-  color: #ffffff;
+.services .icon-box h4 {
+  color: #74f9ff;
   transition: ease-in-out 0.3s;
 }
 

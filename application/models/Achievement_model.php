@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Product_model extends CI_Model
+class Achievement_model extends CI_Model
 {
     private $_table = "event"; //nama tabel
 
@@ -29,16 +29,19 @@ class Product_model extends CI_Model
         ];
     }
 
+    //mengambil semua data
     public function getAll()
     {
         return $this->db->get($this->_table)->result();
     }
     
+    //mengambil berdasarkan id
     public function getById($id)
     {
         return $this->db->get_where($this->_table, ["e_id" => $id])->row();
     }
 
+    //melakukan fungsi save pada create
     public function save()
     {
         $post = $this->input->post();
@@ -48,6 +51,7 @@ class Product_model extends CI_Model
         return $this->db->insert($this->_table, $this);
     }
 
+    //melakukan fungsi update
     public function update()
     {
         $post = $this->input->post();
@@ -57,6 +61,7 @@ class Product_model extends CI_Model
         return $this->db->update($this->_table, $this, array('e_id' => $post['id']));
     }
 
+    //melakukan fungsi delete
     public function delete($id)
     {
         return $this->db->delete($this->_table, array("e_id" => $id));
