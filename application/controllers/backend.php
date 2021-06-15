@@ -52,7 +52,7 @@ class backend extends CI_Controller {
 
 	public function edit($e_id = null)
     {
-        if (!isset($e_id)) redirect('backend_db'); //redirect if there is no id
+        if (!isset($e_id)) redirect('../backend'); //redirect if there is no id
        
         $the_event = $this->achievement_model;
         $validation = $this->form_validation;
@@ -66,7 +66,7 @@ class backend extends CI_Controller {
         $data["listAchievement"] = $the_event->getById($e_id);
         if (!$data["listAchievement"]) show_404();
         
-        $this->load->view("template/form_event_edit", $data);
+        $this->load->view("../template/form_event_edit", $data);
     }
 
     public function delete($id=null)
@@ -74,7 +74,7 @@ class backend extends CI_Controller {
         if (!isset($id)) show_404();
         
         if ($this->product_model->delete($id)) {
-            redirect(site_url('backend_db'));
+            redirect(site_url('backend'));
         }
     }
 

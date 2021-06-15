@@ -31,7 +31,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <img src="<?php echo base_url('event_image/'.$itemlist->e_foto) ?>" width="64" />
                 </td>
                 <td width="250">
-                    <a href="<?php echo site_url('backend/template/form_event_edit.php'.$itemlist->e_id) ?>"
+                    <a href="<?php echo site_url('../edit/template/form_event_edit.php'.$itemlist->e_id) ?>"
                         class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
                     <a onclick="deleteConfirm('<?php echo site_url('admin/products/delete/'.$itemlist->e_id) ?>')"
                         href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
