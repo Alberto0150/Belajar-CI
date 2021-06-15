@@ -2,7 +2,8 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 <body>
-    <form action="<?php echo site_url('template/form_event_new') ?>" method="post" enctype="multipart/form-data" >
+    <!-- sending form to backend/add as controler/method route-->
+    <form action="<?php echo site_url('backend/add') ?>" method="post" enctype="multipart/form-data" >
         <div class="form-group">
             <label for="name">Nama</label>
             <input class="form-control <?php echo form_error('name') ? 'is-invalid':'' ?>"
@@ -22,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
 
         <div class="form-group">
-            <label for="name">Tanggal &#91;yyyy-mm-dd&#92;</label>
+            <label for="name">Tanggal</label>
             <input class="form-control <?php echo form_error('tanggal') ? 'is-invalid':'' ?>"
             type="date" name="tanggal" placeholder="tanggal kegiatan" />
             <div class="invalid-feedback">
