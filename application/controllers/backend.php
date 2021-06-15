@@ -38,33 +38,33 @@ class backend extends CI_Controller {
 
 	public function add()
     {
-        $the_event = $this->Achievement_model; //deklarasi model untuk buat baru
-        $validation = $this->form_validation;	// mempersiapkan untuk fungsi validasi dengan rules pada model
-        $validation->set_rules($the_event->rules());	// mengatur nilai validasi berdasarkan fungsi rules pada model
+        $the_event = $this->Achievement_model; //declare to create new
+        $validation = $this->form_validation;	// declare rules for validation
+        $validation->set_rules($the_event->rules());	// apply rule to the new item
 
-        if ($validation->run()) {	//melakukan proses validasi
-            $the_event->save();		//melakukan penyimpanan pada database
-            $this->session->set_flashdata('success', 'Berhasil disimpan');
+        if ($validation->run()) {	//run validating item
+            $the_event->save();		//save new item into database
+            $this->session->set_flashdata('success', 'item Saved');
         }
 
         $this->load->view("template/form_event_new");
     }
 
-	public function edit($id = null)
+	public function edit($e_id = null)
     {
-        if (!isset($id)) redirect('admin/products');
+        if (!isset($e_id)) redirect('backend_db'); //redirect if there is no id
        
-        $product = $this->product_model;
+        $the_event = $this->achievement_model;
         $validation = $this->form_validation;
-        $validation->set_rules($product->rules());
+        $validation->set_rules($the_event->rules());
 
         if ($validation->run()) {
-            $product->update();
-            $this->session->set_flashdata('success', 'Berhasil disimpan');
+            $the_event->update();
+            $this->session->set_flashdata('success', 'item Saved');
         }
 
-        $data["product"] = $product->getById($id);
-        if (!$data["product"]) show_404();
+        $data["listAchievement"] = $the_event->getById($e_id);
+        if (!$data["listAchievement"]) show_404();
         
         $this->load->view("template/form_event_edit", $data);
     }
@@ -74,7 +74,7 @@ class backend extends CI_Controller {
         if (!isset($id)) show_404();
         
         if ($this->product_model->delete($id)) {
-            redirect(site_url('admin/products'));
+            redirect(site_url('backend_db'));
         }
     }
 

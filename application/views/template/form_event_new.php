@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 <body>
-    <form action="<?php echo site_url('admin/products/add') ?>" method="post" enctype="multipart/form-data" >
+    <form action="<?php echo site_url('template/form_event_new') ?>" method="post" enctype="multipart/form-data" >
         <div class="form-group">
             <label for="name">Name*</label>
             <input class="form-control <?php echo form_error('name') ? 'is-invalid':'' ?>"
