@@ -16,11 +16,11 @@ class Achievement_model extends CI_Model
     {
         return [
             ['field' => 'e_nama',
-            'label' => 'Nama',
+            'label' => 'nama',
             'rules' => 'required'],
 
             ['field' => 'e_sebagai',
-            'label' => 'Sebagai',
+            'label' => 'sebagai',
             'rules' => 'required'],
             
             ['field' => 'e_deskripsi',
