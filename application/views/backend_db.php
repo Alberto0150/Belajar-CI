@@ -2,8 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 <body>
-    <!-- directing into the controller with add function -->
-    <a href="<?php echo site_url('../backend/add/template/form_event_new.php') ?>"><i class="fas fa-plus"></i> Add New</a>
+    <a href="<?php echo site_url('../backend/new_form') ?>"><i class="fas fa-plus"></i> Add New</a>
 
     <table class="table table-hover" id="dataTable" width="100%" cellspacing="0" style="background-color:white">
         <thead>
@@ -35,7 +34,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </td>
                 <td width="250">
                     
-                    <a href="<?php echo site_url('../backend/edit/template/form_event_edit.php/'.$itemlist->e_id) ?>"
+                    <a href="<?php echo site_url('../backend/edit/'.$itemlist->e_id) ?>"
                         class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
                     <a href="<?php echo site_url('../backend/delete/'.$itemlist->e_id) ?>"
                          class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>

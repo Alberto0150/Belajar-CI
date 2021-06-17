@@ -10,7 +10,7 @@ class Achievement_model extends CI_Model
     public $e_sebagai;
     public $e_tanggal;
     public $e_deskripsi;
-    public $e_foto;
+    public $e_foto = "default.jpg";
 
     public function rules()
     {
@@ -45,20 +45,22 @@ class Achievement_model extends CI_Model
     public function save()
     {
         $post = $this->input->post();
-        $this->name = $post["e_nama"];
-        $this->price = $post["e_sebagai"];
-        $this->description = $post["e_deskripsi"];
+        $this->e_nama = $post["nama"];
+        $this->e_sebagai = $post["sebagai"];
+        $this->e_tanggal = $post["tanggal"];
+        $this->e_deskripsi = $post["deskripsi"];
         return $this->db->insert($this->_table, $this);
     }
 
     //melakukan fungsi update
-    public function update()
+    public function update($id)
     {
         $post = $this->input->post();
-        $this->name = $post["e_nama"];
-        $this->price = $post["e_sebagai"];
-        $this->description = $post["e_deskripsi"];
-        return $this->db->update($this->_table, $this, array('e_id' => $post['id']));
+        $this->nama = $post["e_nama"];
+        $this->sebagai = $post["e_sebagai"];
+        $this->e_tanggal = $post["tanggal"];
+        $this->deskripsi = $post["e_deskripsi"];
+        return $this->db->update($this->_table, $this, array('e_id' => $id));
     }
 
     //melakukan fungsi delete

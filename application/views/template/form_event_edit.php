@@ -3,10 +3,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 <body>
     <form action="" method="post" enctype="multipart/form-data">
-    <!-- Note: atribut action dikosongkan, artinya action-nya akan diproses 
-        oleh controller tempat vuew ini digunakan. Yakni index.php/admin/products/edit/ID --->
 
-        <input type="hidden" name="id" value="<?php echo $product->product_id?>" />
+        <input type="hidden" name="id" value="<?php echo $itemlist->e_id?>" />
 
         <div class="form-group">
             <label for="name">Nama</label>

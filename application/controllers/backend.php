@@ -35,20 +35,24 @@ class backend extends CI_Controller {
         $this->load->view("backend_db", $data);
 		$this->load->view('template/foot');
 	}
+    public function new_form()
+    {
+        $this->load->view('template/head');
+		$this->load->view('template/form_event_new');
+		$this->load->view('template/foot');
+    }
 
 	public function add()
     {
         $the_event = $this->achievement_model; //declare to create new
-        $validation = $this->form_validation;	// declare rules for validation
-        $validation->set_rules($the_event->rules());	// apply rule to the new item
+        // $validation = $this->form_validation;	// declare rules for validation
+        // $validation->set_rules($the_event->rules());	// apply rule to the new item
 
-        if ($validation->run()) {	//run validating item
+        // if ($validation->run()) {	//run validating item
             $the_event->save();		//save new item into database
             $this->session->set_flashdata('success', 'item Saved');
-        }
-        $this->load->view('template/head');
-        $this->load->view("template/form_event_new"); //directing to the new form
-        $this->load->view('template/foot');
+        // }
+        $this->load->view("template/form_event_new"); //directing to make another new form
     }
 
 	public function edit($e_id = null)
@@ -60,7 +64,7 @@ class backend extends CI_Controller {
         $validation->set_rules($the_event->rules());
 
         if ($validation->run()) {
-            $the_event->update();
+            $the_event->update($e_id);
             $this->session->set_flashdata('success', 'item Saved');
         }
 

@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- sending form to backend/add as controler/method route-->
     <form action="<?php echo site_url('../backend/add') ?>" method="post" enctype="multipart/form-data" >
         <div class="form-group">
-            <label for="name">Nama</label>
+            <label for="nama">Nama</label>
             <input class="form-control <?php echo form_error('name') ? 'is-invalid':'' ?>"
             type="text" name="nama" placeholder="Nama Event" />
             <div class="invalid-feedback">
@@ -14,7 +14,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
 
         <div class="form-group">
-            <label for="name">Sebagai</label>
+            <label for="sebagai">Sebagai</label>
             <input class="form-control <?php echo form_error('sebagai') ? 'is-invalid':'' ?>"
             type="text" name="sebagai" placeholder="Sebagai ..." />
             <div class="invalid-feedback">
@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
 
         <div class="form-group">
-            <label for="name">Tanggal</label>
+            <label>Tanggal</label>
             <input class="form-control <?php echo form_error('tanggal') ? 'is-invalid':'' ?>"
             type="date" name="tanggal" placeholder="tanggal kegiatan" />
             <div class="invalid-feedback">
@@ -33,7 +33,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         
 
         <div class="form-group">
-            <label for="name">Deskripsi</label>
+            <label for="deskripsi">Deskripsi</label>
             <textarea class="form-control <?php echo form_error('deskripsi') ? 'is-invalid':'' ?>"
             name="deskripsi" placeholder="deskripsi tugas..."></textarea>
             <div class="invalid-feedback">
