@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 <body>
     <!-- sending form to backend/add as controler/method route-->
-    <form action="<?php echo site_url('backend/add') ?>" method="post" enctype="multipart/form-data" >
+    <form action="<?php echo site_url('../backend/add') ?>" method="post" enctype="multipart/form-data" >
         <div class="form-group">
             <label for="name">Nama</label>
             <input class="form-control <?php echo form_error('name') ? 'is-invalid':'' ?>"

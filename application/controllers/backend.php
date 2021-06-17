@@ -46,8 +46,9 @@ class backend extends CI_Controller {
             $the_event->save();		//save new item into database
             $this->session->set_flashdata('success', 'item Saved');
         }
-
+        $this->load->view('template/head');
         $this->load->view("template/form_event_new"); //directing to the new form
+        $this->load->view('template/foot');
     }
 
 	public function edit($e_id = null)
@@ -73,8 +74,8 @@ class backend extends CI_Controller {
     {
         if (!isset($id)) show_404();
         
-        if ($this->product_model->delete($id)) {
-            redirect(site_url('backend'));
+        if ($this->achievement_model->delete($id)) {
+            redirect(site_url('../backend'));
         }
     }
 
