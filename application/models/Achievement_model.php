@@ -56,10 +56,10 @@ class Achievement_model extends CI_Model
     public function update($id)
     {
         $post = $this->input->post();
-        $this->nama = $post["e_nama"];
-        $this->sebagai = $post["e_sebagai"];
+        $this->e_nama = $post["nama"];
+        $this->e_sebagai = $post["sebagai"];
         $this->e_tanggal = $post["tanggal"];
-        $this->deskripsi = $post["e_deskripsi"];
+        $this->e_deskripsi = $post["deskripsi"];
         return $this->db->update($this->_table, $this, array('e_id' => $id));
     }
 
