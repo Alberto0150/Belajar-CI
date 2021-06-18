@@ -42,12 +42,12 @@ class backend extends CI_Controller {
 		$this->load->view('template/foot');
     }
 
-    public function edit_form()
-    {
-        $this->load->view('template/head');
-		$this->load->view('template/form_event_edit');
-		$this->load->view('template/foot');
-    }
+    // public function edit_form($id = null)
+    // {
+    //     $this->load->view('template/head');
+	// 	$this->load->view('template/form_event_edit',$id);
+	// 	$this->load->view('template/foot');
+    // }
 
 	public function add()
     {
@@ -62,21 +62,21 @@ class backend extends CI_Controller {
         $this->load->view("template/form_event_new"); //directing to make another new form
     }
 
-	public function edit($e_id = null)
+	public function edit_form($id = null)
     {
-        if (!isset($e_id)) redirect('backend'); //redirect if there is no id
+        if (!isset($id)) redirect('backend'); //redirect if there is no id
        
         $the_event = $this->achievement_model;
         // $validation = $this->form_validation;
         // $validation->set_rules($the_event->rules());
 
         // if ($validation->run()) {
-            $the_event->update($e_id);
-            $this->session->set_flashdata('success', 'item Saved');
+            // $the_event->update($e_id);
+            // $this->session->set_flashdata('success', 'item Saved');
         // }
 
-        $data["anAchievement"] = $the_event->getById($e_id);
-        if (!$data["anAchievement"]) show_404();
+        $data["listAchievement"] = $the_event->getById($id);
+        if (!$data["listAchievement"]) show_404();
         
         $this->load->view("template/form_event_edit", $data);
     }
