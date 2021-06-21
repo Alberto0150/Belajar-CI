@@ -73,6 +73,7 @@ class Achievement_model extends CI_Model
     //melakukan fungsi delete
     public function delete($id)
     {
+        $this->_deleteImage($id);
         return $this->db->delete($this->_table, array("e_id" => $id));
     }
 
