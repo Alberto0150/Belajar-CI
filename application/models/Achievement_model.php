@@ -87,7 +87,7 @@ class Achievement_model extends CI_Model
 
         $this->load->library('upload', $config);
 
-        if ($this->upload->do_upload('image')) {
+        if ($this->upload->do_upload('e_foto')) {
             return $this->upload->data("file_name");
         }
         
