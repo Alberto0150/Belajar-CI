@@ -67,13 +67,13 @@ class backend extends CI_Controller {
         if (!isset($id)) redirect('backend'); //redirect if there is no id
        
         $the_event = $this->achievement_model;
-        // $validation = $this->form_validation;
-        // $validation->set_rules($the_event->rules());
+        $validation = $this->form_validation;
+        $validation->set_rules($the_event->rules());
 
-        // if ($validation->run()) {
-            // $the_event->update($e_id);
-            // $this->session->set_flashdata('success', 'item Saved');
-        // }
+        if ($validation->run()) {
+            $the_event->update();
+            $this->session->set_flashdata('success', 'item Saved');
+        }
 
         $data["listAchievement"] = $the_event->getById($id);
         if (!$data["listAchievement"]) show_404();

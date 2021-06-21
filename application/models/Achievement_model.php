@@ -17,15 +17,15 @@ class Achievement_model extends CI_Model
         return [
             ['field' => 'e_nama',
             'label' => 'nama',
-            'rules' => 'required'],
-
-            ['field' => 'e_sebagai',
-            'label' => 'sebagai',
-            'rules' => 'required'],
-            
-            ['field' => 'e_deskripsi',
-            'label' => 'deskripsi',
             'rules' => 'required']
+
+            // ['field' => 'e_sebagai',
+            // 'label' => 'sebagai',
+            // 'rules' => 'required'],
+            
+            // ['field' => 'e_deskripsi',
+            // 'label' => 'deskripsi',
+            // 'rules' => 'required']
         ];
     }
 
@@ -54,19 +54,20 @@ class Achievement_model extends CI_Model
     }
 
     //melakukan fungsi update
-    public function update($id)
+    public function update()
     {
         $post = $this->input->post();
-        $this->e_nama = $post["nama"];
-        $this->e_sebagai = $post["sebagai"];
-        $this->e_tanggal = $post["tanggal"];
-        $this->e_deskripsi = $post["deskripsi"];
-        if (!empty($_FILES["image"]["name"])) {
+        $this->e_id = $post['id'];
+        $this->e_nama = $post["e_nama"];
+        $this->e_sebagai = $post["e_sebagai"];
+        $this->e_tanggal = $post["e_tanggal"];
+        $this->e_deskripsi = $post["e_deskripsi"];
+        if (!empty($_FILES["e_foto"]["name"])) {
             $this->e_foto = $this->_uploadImage();
         } else {
             $this->e_foto = $post["old_image"];
         }
-        return $this->db->update($this->_table, $this, array('e_id' => $id));
+        return $this->db->update($this->_table, $this, array('e_id' => $post['id']));
     }
 
     //melakukan fungsi delete
@@ -79,7 +80,7 @@ class Achievement_model extends CI_Model
     {
         $config['upload_path']          = './event_image/';
         $config['allowed_types']        = 'gif|jpg|png';
-        $config['file_name']            = $this->e_id;
+        $config['file_name']            =  strval($this->e_id);
         $config['overwrite']			= true;
         $config['max_size']             = 1024; // 1MB
         // $config['max_width']            = 1024;
